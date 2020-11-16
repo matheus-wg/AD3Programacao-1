@@ -1,5 +1,7 @@
 package Principal;
 
 public class Principal {
-    String teste;
+    public static void main(String[] args) {
+        String teste;
+    }
 }
