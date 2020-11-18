@@ -77,7 +77,7 @@
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace pref="354" max="32767" attributes="0"/>
-              <Component id="b_enviar" min="-2" pref="100" max="-2" attributes="0"/>
+              <Component id="c_enviar" min="-2" pref="100" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="b_cancelar" min="-2" pref="100" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="340" max="-2" attributes="0"/>
@@ -133,8 +133,8 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="b_enviar" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                   <Component id="b_cancelar" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="c_enviar" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
           </Group>
@@ -204,14 +204,6 @@
         <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o da den&#xfa;ncia:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="b_enviar">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Enviar"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b_enviarActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="b_cancelar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cancelar"/>
@@ -241,6 +233,14 @@
     <Component class="javax.swing.JFormattedTextField" name="c_cep">
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="c_horaOcorrencia">
+    </Component>
+    <Component class="javax.swing.JButton" name="c_enviar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Enviar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="c_enviarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
