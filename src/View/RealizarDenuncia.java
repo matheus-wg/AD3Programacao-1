@@ -41,9 +41,9 @@ public class RealizarDenuncia extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         b_enviar = new javax.swing.JButton();
         b_cancelar = new javax.swing.JButton();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        c_dataOcorrencia = new com.toedter.calendar.JDateChooser();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        c_descricao = new javax.swing.JTextArea();
         c_cep = new javax.swing.JFormattedTextField();
         c_horaOcorrencia = new javax.swing.JFormattedTextField();
 
@@ -96,10 +96,10 @@ public class RealizarDenuncia extends javax.swing.JFrame {
             }
         });
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setLineWrap(true);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        c_descricao.setColumns(20);
+        c_descricao.setLineWrap(true);
+        c_descricao.setRows(5);
+        jScrollPane1.setViewportView(c_descricao);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -133,7 +133,7 @@ public class RealizarDenuncia extends javax.swing.JFrame {
                                 .addGap(130, 130, 130))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(c_dataOcorrencia, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(c_cep, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(c_horaOcorrencia, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
@@ -172,7 +172,7 @@ public class RealizarDenuncia extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel5)
-                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(c_dataOcorrencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
@@ -276,10 +276,11 @@ public class RealizarDenuncia extends javax.swing.JFrame {
     private javax.swing.JRadioButton b_sim;
     private javax.swing.JFormattedTextField c_cep;
     private javax.swing.JTextField c_cidade;
+    private com.toedter.calendar.JDateChooser c_dataOcorrencia;
+    private javax.swing.JTextArea c_descricao;
     private javax.swing.JTextField c_estado;
     private javax.swing.JFormattedTextField c_horaOcorrencia;
     private javax.swing.JTextField c_logradouro;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -289,6 +290,5 @@ public class RealizarDenuncia extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
