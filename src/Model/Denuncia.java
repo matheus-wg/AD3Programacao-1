@@ -6,19 +6,24 @@ public class Denuncia {
     private String protocolo;
     private String descricao;
     private boolean ocorrendoNoMomento;
+    //Por enquanto ficara String
+    private String dataOcorrencia;
+    private String horaOcorrencia;
 
     //Construtor Vazio
     public Denuncia() {
+        
     }
 
-    //Contrutor com par√¢metros
-    public Denuncia(int numeroDenuncia, String protocolo, String descricao, boolean ocorrendoNoMomento) {
+    //Contrutor com par‚metros
+    public Denuncia(int numeroDenuncia, String protocolo, String descricao, boolean ocorrendoNoMomento, String dataOcorrencia, String horaOcorrencia) {
         this.numeroDenuncia = numeroDenuncia;
         this.protocolo = protocolo;
         this.descricao = descricao;
         this.ocorrendoNoMomento = ocorrendoNoMomento;
+        this.dataOcorrencia = dataOcorrencia;
+        this.horaOcorrencia = horaOcorrencia;
     }
-    
     
     //Getter and Setter
     public int getNumeroDenuncia() {
@@ -53,5 +58,20 @@ public class Denuncia {
         this.ocorrendoNoMomento = ocorrendoNoMomento;
     }
     
+        public String getDataOcorrencia() {
+        return dataOcorrencia;
+    }
+
+    public void setDataOcorrencia(String dataOcorrencia) {
+        this.dataOcorrencia = dataOcorrencia;
+    }
+
+    public String getHoraOcorrencia() {
+        return horaOcorrencia;
+    }
+
+    public void setHoraOcorrencia(String horaOcorrencia) {
+        this.horaOcorrencia = horaOcorrencia;
+    }
     
 }
