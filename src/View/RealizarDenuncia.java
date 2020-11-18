@@ -45,7 +45,7 @@ public class RealizarDenuncia extends javax.swing.JFrame {
         c_descricao = new javax.swing.JTextArea();
         c_cep = new javax.swing.JFormattedTextField();
         c_horaOcorrencia = new javax.swing.JFormattedTextField();
-        c_enviar = new javax.swing.JButton();
+        b_enviar = new javax.swing.JButton();
 
         setTitle("Realizar denúncia");
         setSize(new java.awt.Dimension(900, 600));
@@ -94,10 +94,10 @@ public class RealizarDenuncia extends javax.swing.JFrame {
         c_descricao.setRows(5);
         jScrollPane1.setViewportView(c_descricao);
 
-        c_enviar.setText("Enviar");
-        c_enviar.addActionListener(new java.awt.event.ActionListener() {
+        b_enviar.setText("Enviar");
+        b_enviar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                c_enviarActionPerformed(evt);
+                b_enviarActionPerformed(evt);
             }
         });
 
@@ -145,7 +145,7 @@ public class RealizarDenuncia extends javax.swing.JFrame {
                 .addGap(130, 130, 130))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(354, Short.MAX_VALUE)
-                .addComponent(c_enviar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b_enviar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(b_cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(340, 340, 340))
@@ -191,7 +191,7 @@ public class RealizarDenuncia extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(b_cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(c_enviar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(b_enviar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(133, 133, 133))
         );
 
@@ -211,9 +211,9 @@ public class RealizarDenuncia extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_b_cancelarActionPerformed
 
-    private void c_enviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_enviarActionPerformed
+    private void b_enviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_enviarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_c_enviarActionPerformed
+    }//GEN-LAST:event_b_enviarActionPerformed
 
     public void formatarCampoCep() {
         try {
@@ -271,13 +271,13 @@ public class RealizarDenuncia extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton b_cancelar;
+    private javax.swing.JButton b_enviar;
     private javax.swing.JRadioButton b_nao;
     private javax.swing.JRadioButton b_sim;
     private javax.swing.JFormattedTextField c_cep;
     private javax.swing.JTextField c_cidade;
     private com.toedter.calendar.JDateChooser c_dataOcorrencia;
     private javax.swing.JTextArea c_descricao;
-    private javax.swing.JButton c_enviar;
     private javax.swing.JTextField c_estado;
     private javax.swing.JFormattedTextField c_horaOcorrencia;
     private javax.swing.JTextField c_logradouro;
