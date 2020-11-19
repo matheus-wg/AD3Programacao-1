@@ -213,6 +213,9 @@
       </Events>
     </Component>
     <Component class="com.toedter.calendar.JDateChooser" name="c_dataOcorrencia">
+      <Properties>
+        <Property name="dateFormatString" type="java.lang.String" value="dd&apos;/&apos;MM&apos;/&apos;Y"/>
+      </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
       <AuxValues>
