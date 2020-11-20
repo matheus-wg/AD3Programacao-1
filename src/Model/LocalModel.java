@@ -1,21 +1,21 @@
 package Model;
 
-public class Local {
+public class LocalModel {
     private String logradouro;
     private String cidade;
     private String estado;
-    private String cep;
+    private String bairro;
 
     //Construtor vazio
-    public Local() {
+    public LocalModel() {
     }
 
     //Construtor com parâmetros
-    public Local(String logradouro, String cidade, String estado, String cep) {
+    public LocalModel(String logradouro, String cidade, String estado, String bairro) {
         this.logradouro = logradouro;
         this.cidade = cidade;
         this.estado = estado;
-        this.cep = cep;
+        this.bairro = bairro;
     }
     
     //Getter and Setter
@@ -43,12 +43,12 @@ public class Local {
         this.estado = estado;
     }
 
-    public String getCep() {
-        return cep;
+    public String getBairro() {
+        return bairro;
     }
 
-    public void setCep(String cep) {
-        this.cep = cep;
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
     }
     
 }

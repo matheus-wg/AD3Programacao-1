@@ -89,6 +89,8 @@ public class RealizarDenuncia extends javax.swing.JFrame {
             }
         });
 
+        c_dataOcorrencia.setDateFormatString("dd'/'MM'/'Y");
+
         c_descricao.setColumns(20);
         c_descricao.setLineWrap(true);
         c_descricao.setRows(5);
